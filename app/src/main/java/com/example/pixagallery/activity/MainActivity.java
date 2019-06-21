@@ -94,6 +94,7 @@ public class MainActivity extends AppCompatActivity implements MainActivityContr
     @Override
     public void startIntentActivity(List<Hit> hits, int currPosition) {
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        //add
         ZoomImgFragment zoomImgFragment = new ZoomImgFragment().newInstance((Serializable) hits, currPosition);
 
 
